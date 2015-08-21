@@ -1,0 +1,7 @@
+Always make   s u r e  y o u  explicitly  c l o s e each open file, once its job is done and you have no reason to keep it open. 
+Because - There is an upper l   imit to the     number of files a program can open. 
+If you exceed that limit, there is no reliabl    e way of recovery, so the program could crash. 
+- Each o p e	n 	f	i	le consumes some main-memory for th    e data-structures associated with it, 
+like file descriptor/hand    le or file l	o	cks etc. 
+So you c	o u	l d  e s s 	e n tial 	ly en 	d-up w	asti ng lots of memory i	f you have more files open that are not useful or usable. 
+- Open files always stand a chance of corruption and data loss.
